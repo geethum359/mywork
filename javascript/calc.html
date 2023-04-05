@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        num1:<input type="text" id="n1"><br><br>
+        num2:<input type="text" id="n2">
+    </form>
+    <p id="calc"></p>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <script>
+        function add()
+        {
+            var x,y,a
+            x=document.getElementById("n1").value;
+            y=document.getElementById("n2").value;
+            a=Number(x)+Number(y);
+            document.getElementById("calc").innerHTML=a;
+        }
+        function sub()
+        {
+            var x,y,a
+            x=document.getElementById("n1").value;
+            y=document.getElementById("n2").value;
+            a=Number(x)-Number(y);
+            document.getElementById("calc").innerHTML=a;
+        }
+        function mul()
+        {
+            var x,y,a
+            x=document.getElementById("n1").value;
+            y=document.getElementById("n2").value;
+            a=Number(x)*Number(y);
+            document.getElementById("calc").innerHTML=a;
+        }
+        function div()
+        {
+            var x,y,a
+            x=document.getElementById("n1").value;
+            y=document.getElementById("n2").value;
+            a=Number(x)/Number(y);
+            document.getElementById("calc").innerHTML=a;
+        }
+    </script>
+</body>
+</html>

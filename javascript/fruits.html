@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Fruits:</label>
+    <select id="ft">
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+        <option value="orange">Orange</option>
+        <option value="grape">Grapes</option>
+    </select>
+    <input id="res">
+    <button onclick="pri()">price</button>
+    <script>
+        function pri()
+        {
+            var a;
+            a=document.getElementById("ft").value;
+            switch(a)
+            {
+                case 'apple':
+                    price=20;
+                    break;
+                case 'mango':
+                    price=30;
+                    break;
+                case 'orange':
+                    price=30;
+                    break;
+                case 'grape':
+                    price=40
+                    break;
+            }
+            document.getElementById("res").value=price;
+        }
+    </script>
+</body>
+</html>
