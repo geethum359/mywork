@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border:2px solid blue;width: 200px;height: 350px;">
+        Hello
+    </div>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+    <button id="b3">Toggle</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready (function()
+        {
+            $('#b1').click(function(){
+                $("div").hide();
+            });
+            $('#b2').click(function(){
+                $("div").show();
+            });
+            $('#b3').click(function(){
+                $("div").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
